@@ -32,14 +32,8 @@ deploy:
     condition: '"$TRAVIS_EVENT_TYPE" = "push"'
 - skip_cleanup: true
   provider: script
-  script: echo "Release deployment"
+  script: echo "Deploying to maven"
   on:
     branch: master
-    condition: '"$TRAVIS_EVENT_TYPE" = "push"'
-    tags: true
-- skip_cleanup: true
-  provider: script
-  script: echo "Tagged build deployment, allegedly"
-  on:
     condition: '"$TRAVIS_EVENT_TYPE" = "push"'
     tags: true
