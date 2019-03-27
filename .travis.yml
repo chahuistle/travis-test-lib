@@ -37,9 +37,9 @@ deploy:
   on:
     condition: '"$TRAVIS_EVENT_TYPE" = "push"'
     tags: true
-#- skip_cleanup: true
-#  provider: script
-#  script: echo "Deploying Documentation"
-#  on:
-#    condition: '"$TRAVIS_EVENT_TYPE" = "push"'
-#    all_branches: true
+- skip_cleanup: true
+  provider: script
+  script: echo "Deploying Documentation"
+  on:
+    condition: '"$TRAVIS_EVENT_TYPE" = "push"'
+    all_branches: true
