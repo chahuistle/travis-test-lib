@@ -13,7 +13,7 @@ branches:
   only:
   - master
   - development
-  - /[vV]?^\d+\.\d+\.\d+$/ # matches e.g., v1.2.3, 1.2.3, V1.2.3
+  - /^[vV]?\d+\.\d+\.\d+$/ # matches e.g., v1.2.3, 1.2.3, V1.2.3
 
 # added to make logs look cleaner, crisper, certified fresh
 before_install: unset _JAVA_OPTIONS 
@@ -34,6 +34,5 @@ deploy:
   provider: script
   script: echo "Deploying to maven"
   on:
-    branch: master
     condition: '"$TRAVIS_EVENT_TYPE" = "push"'
     tags: true
