@@ -9,11 +9,11 @@ language: java
 jdk: openjdk8
 
 # as agreed in our SOP
-branches:
-  only:
-  - master
-  - development
-  - /^\d+\.\d+\.\d+\.$/ # matches [number].[number].[number]
+#branches:
+#  only:
+#  - master
+#  - development
+#  - /^\d+\.\d+\.\d+\.$/ # matches [number].[number].[number]
 
 # added to make logs look cleaner, crisper, certified fresh
 before_install: unset _JAVA_OPTIONS 
