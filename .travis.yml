@@ -21,7 +21,7 @@ before_install: unset _JAVA_OPTIONS
 # speed up builds by telling Travis that we don't need any special "installation"
 install: true
 
-script: set | grep TRAVIS_
+script: set | grep "^TRAVIS_"
 
 deploy:
 - skip_cleanup: true
