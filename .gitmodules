@@ -1,0 +1,4 @@
+[submodule "modules/more-tests"]
+	path = modules/more-tests
+	url = ../more-tests
+	branch = testbranch
